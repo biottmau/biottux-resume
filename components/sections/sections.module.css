@@ -1,5 +1,25 @@
+
 .section_land{
     height:  100vh ;
     background: url('/images/bg3.jpg');
     margin-top: -8vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_land_title_off{
+    color:white;
+    font-size: 5vh;
+}
+
+.section_land_title{
+    color:white;
+    font-size: 8vh;
+    transition: all 500ms ease-out;
+}
+
+.section_land_subtitle{
+    color:#aaaaaa;
+    font-size: 5vh;
 }
