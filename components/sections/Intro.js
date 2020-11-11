@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from './intro.module.css';
-
+import Fade from 'react-reveal/Fade';
 
 function Intro() {
 
     return (
         <div className={styles.container}>
             <div className={styles.column}>
+                <Fade>
                 <h1>Why choose me as your Developer</h1>
+                </Fade>
                 <p>
                     I'm a fullstack software developer. I started working in 1996 and  I had been learning about programming languages and others technologies since then.
                 </p>
@@ -31,7 +33,9 @@ function Intro() {
                 </p>
             </div>
             <div className={styles.column_right}>
+                <Fade>
                 <img src="/images/introImg.png" />
+                </Fade>
             </div>
         </div>
     );
