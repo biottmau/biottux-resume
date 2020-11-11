@@ -15,8 +15,8 @@ const Land = () => {
     return (
         <div className={styles.section_land}>
             <div className={title_class}>
-                @Biottux 
-                <div className={styles.section_land_subtitle}>| Software Development</div>
+                @biottux 
+                <div className={styles.section_land_subtitle}>| Software Developer</div>
             </div>
         </div>
     )

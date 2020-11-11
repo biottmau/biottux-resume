@@ -7,10 +7,10 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0px 0px 90px 0px;
+    border-radius: 0px 0px 100px 0px;
 }
 
-.section_land::after{
+/* .section_land::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -20,20 +20,22 @@
     transform: SkewY(2deg);
     transform-origin: bottom left;
     background: cadetblue;
-}
+} */
 
 .section_land_title_off{
-    color:white;
+    color:#DAE3E5;
     font-size: 5vh;
 }
 
 .section_land_title{
-    color:white;
+    color:#DAE3E5;
     font-size: 8vh;
-    transition: all 500ms ease-out;
+    transition: all 300ms ease-out;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .section_land_subtitle{
-    color:#aaaaaa;
-    font-size: 5vh;
+    color:#5391A7;
+    font-size: 4vh;
 }
