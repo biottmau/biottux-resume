@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;   
+    align-items: center;
+    background: #003B4F;
+    color:#DAE3E5;
+}
+.container > h1 {
+    flex:1;
+    flex-wrap: nowrap;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    background: #003B4F;
+
+}
+
+.social img{
+    width: 2rem;
+}
+
+.social a{
+    margin: 1rem;
+}
+
+.social a:hover{
+    margin: 1rem;
+    background-color: #DAE3E5;
+}

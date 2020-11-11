@@ -7,7 +7,7 @@ function Intro() {
     return (
         <div className={styles.container}>
             <div className={styles.column}>
-                <h1>Why choose me</h1>
+                <h1>Why choose me as your Developer</h1>
                 <p>
                     I'm a fullstack software developer. I started working in 1996 and  I had been learning about programming languages and others technologies since then.
                 </p>
@@ -30,7 +30,9 @@ function Intro() {
                     Practical experience in solving software problems, corrective and preventive maintenance.
                 </p>
             </div>
-            <div className={styles.column_right}>otra cosa</div>
+            <div className={styles.column_right}>
+                <img src="/images/introImg.png" />
+            </div>
         </div>
     );
 }

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Land from '../components/sections/Land'
 import Intro from '../components/sections/Intro'
+import Contact from '../components/sections/Contact'
 
 export default function Home({ allPostsData }) {
   return (
@@ -39,6 +40,7 @@ export default function Home({ allPostsData }) {
       <section >
         <Land />
         <Intro />
+        <Contact />
       </section>
     </Layout>
   )
