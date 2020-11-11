@@ -2,8 +2,9 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Navbar from './Navbar'
 
-const name = '[Biottux]'
+const name = '[btx]'
 export const siteTitle = 'Biottux Resume Website'
 
 export default function Layout({ children, home }) {
@@ -25,7 +26,8 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
+        <Navbar />
+        {/* {home ? (
           <>
             <img
               src="/images/profile.jpg"
@@ -51,7 +53,7 @@ export default function Layout({ children, home }) {
               </Link>
             </h2>
           </>
-        )}
+        )} */}
       </header>
       <main>{children}</main>
       {!home && (

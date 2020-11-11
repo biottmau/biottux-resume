@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import Land from '../components/sections/Land'
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,7 +12,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      {/* <section className={utilStyles.headingMd}>
         <p>Desarrollador de Software Fullstack</p>
         <p>
           (This is a sample website - you’ll be building a site like this in{' '}
@@ -33,6 +34,9 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+      </section> */}
+      <section >
+        <Land />
       </section>
     </Layout>
   )
