@@ -1,0 +1,33 @@
+.container{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 1rem;   
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 50%;
+    color: #00212D;
+    font-size: 1em;
+}
+.column>h1{
+    color:#00212D;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    font-size: 2em;
+}
+
+.column_right{
+    flex: 50%;
+}
+
+@media screen and (max-width: 992px) {
+    .column {
+      flex: 100%;
+    }
+    .column_right{
+        display: none;
+    }
+    
+  }

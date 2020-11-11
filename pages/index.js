@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Land from '../components/sections/Land'
+import Intro from '../components/sections/Intro'
 
 export default function Home({ allPostsData }) {
   return (
@@ -37,6 +38,7 @@ export default function Home({ allPostsData }) {
       </section> */}
       <section >
         <Land />
+        <Intro />
       </section>
     </Layout>
   )

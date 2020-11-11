@@ -26,8 +26,8 @@ const Navbar = () => {
 
     return (
         <header className={navbarClasses.join(' ')}>
-            <div className="logo">{/* your logo */}</div>
-            <nav className="navigation">{/* your navigation */}</nav>
+            <div className="logo">@biottmau</div>
+            <nav className="navigation">| Software Developer</nav>
         </header>
     );
 };
