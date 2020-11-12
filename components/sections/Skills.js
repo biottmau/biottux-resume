@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './skills.module.css';
+import Fade from 'react-reveal/Fade';
+import CardSkill from '../CardSkill';
 
 
-function Skills() {
+function Skills({ allSkills }) {
+
+    useEffect(() => {
+        //console.log(allSkills);
+    }, []);
+
+
     return (
         <div className={styles.container}>
             <div className={styles.content}>
+                <Fade>
                 <h1>What I do?</h1>
-
+                </Fade>
                 <div className={styles.columns}>
-                    <div className={styles.col}>col 1</div>
-                    <div className={styles.col}>col 2</div>
-                    <div className={styles.col}>col 3</div>
+                    {allSkills.map((skl) => (
+                        <div className={styles.col}>
+                            <CardSkill skillData={skl} />
+                        </div>
+
+                    ))}
                 </div>
             </div>
 

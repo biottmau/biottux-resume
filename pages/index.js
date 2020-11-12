@@ -1,16 +1,19 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { getPostData, getSortedPostsData } from '../lib/posts'
+import { getHomeSkillData, getPostData, getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Land from '../components/sections/Land'
 import Intro from '../components/sections/Intro'
 import Contact from '../components/sections/Contact'
 import Skills from '../components/sections/Skills'
+import { useEffect } from 'react'
 
-export default function Home({ allPostsData,introData }) {
+export default function Home({ allPostsData,introData,skillsData }) {
 
+  useEffect( () => {
+  },[] );
   return (
     <Layout home>
       <Head>
@@ -42,7 +45,7 @@ export default function Home({ allPostsData,introData }) {
       <section >
         <Land />
         <Intro postData={introData} />
-        <Skills />
+        <Skills allSkills={skillsData}/>
         <Contact />
         
       </section>
@@ -53,10 +56,12 @@ export default function Home({ allPostsData,introData }) {
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   const introData = await getPostData("intro");
+  const skillsData = await getHomeSkillData();
   return {
     props: {
       allPostsData,
-      introData
+      introData,
+      skillsData
     }
   }
 }
