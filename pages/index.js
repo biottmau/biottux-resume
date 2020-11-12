@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
+import { getPostData, getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Land from '../components/sections/Land'
 import Intro from '../components/sections/Intro'
 import Contact from '../components/sections/Contact'
+import Skills from '../components/sections/Skills'
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData,introData }) {
+
   return (
     <Layout home>
       <Head>
@@ -39,18 +41,22 @@ export default function Home({ allPostsData }) {
       </section> */}
       <section >
         <Land />
-        <Intro />
+        <Intro postData={introData} />
+        <Skills />
         <Contact />
+        
       </section>
     </Layout>
   )
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
+  const introData = await getPostData("intro");
   return {
     props: {
-      allPostsData
+      allPostsData,
+      introData
     }
   }
 }
