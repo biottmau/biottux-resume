@@ -9,6 +9,7 @@ import Intro from '../components/sections/Intro'
 import Contact from '../components/sections/Contact'
 import Skills from '../components/sections/Skills'
 import { useEffect } from 'react'
+import Experience from '../components/sections/Experience'
 
 export default function Home({ allPostsData,introData,skillsData }) {
 
@@ -46,6 +47,7 @@ export default function Home({ allPostsData,introData,skillsData }) {
         <Land />
         <Intro postData={introData} />
         <Skills allSkills={skillsData}/>
+        <Experience />
         <Contact />
         
       </section>
