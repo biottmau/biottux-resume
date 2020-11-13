@@ -13,9 +13,10 @@ function CardExperience({ expData }) {
                     </Flash>
                 </div>
                 <div className="container-exp-detail">
+                    <div>
                     <h1> {expData.title}</h1>
                     <div dangerouslySetInnerHTML={{ __html: expData.contentHtml }} />
-
+                    </div>
                 </div>
             </div>
             <style jsx>{`
@@ -29,7 +30,16 @@ function CardExperience({ expData }) {
                     width:90%;
                     display:flex;
                     margin-bottom:1rem;
+                    flex-direction:row;
                 }
+
+
+                @media screen and (max-width: 992px) {
+                    .container-exp{
+                        flex-direction:column;
+                    }
+                }
+                
                 .container-exp-logo{
                     flex:30%;
                     display:flex;
@@ -43,6 +53,8 @@ function CardExperience({ expData }) {
                 .container-exp-detail{
                     flex:70%;
                     padding:1rem;
+                    flex-wrap: wrap;   
+
                 }
             
 
