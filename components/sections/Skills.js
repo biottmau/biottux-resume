@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './skills.module.css';
 import Fade from 'react-reveal/Fade';
 import CardSkill from '../CardSkill';
@@ -13,7 +13,7 @@ function Skills({ allSkills }) {
                 </Fade>
                 <div className={styles.columns}>
                     {allSkills.map((skl) => (
-                        <div className={styles.col}>
+                        <div className={styles.col} key={skl.title} >
                             <CardSkill skillData={skl} />
                         </div>
                     ))}
