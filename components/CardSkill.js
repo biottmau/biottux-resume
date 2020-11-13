@@ -6,7 +6,7 @@ function CardSkill({ skillData }) {
         <Bounce>
             <div className="containerskill"  >
                 <div><h3>{skillData.title}</h3></div>
-                <div dangerouslySetInnerHTML={{ __html: skillData.contentHtml }} />
+                <div className="skill_font" dangerouslySetInnerHTML={{ __html: skillData.contentHtml }} />
             </div>
             <style jsx>{`
                 .containerskill{
@@ -26,6 +26,9 @@ function CardSkill({ skillData }) {
                 .containerskill:hover{
                     background-color: #FFFFFF;
                 }      
+                .skill_font{
+                    font-size: 1em;
+                }
             `}</style>   
            </Bounce>
     );

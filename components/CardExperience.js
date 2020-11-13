@@ -15,7 +15,7 @@ function CardExperience({ expData }) {
                 <div className="container-exp-detail">
                     <div>
                     <h1> {expData.title}</h1>
-                    <div dangerouslySetInnerHTML={{ __html: expData.contentHtml }} />
+                    <div className="exp_font" dangerouslySetInnerHTML={{ __html: expData.contentHtml }} />
                     </div>
                 </div>
             </div>
@@ -27,19 +27,13 @@ function CardExperience({ expData }) {
                     -webkit-box-shadow: -1px 3px 6px -2px rgba(33,32,33,0.28);
                     -moz-box-shadow: -1px 3px 6px -2px rgba(33,32,33,0.28);
                     box-shadow: -1px 3px 6px -2px rgba(33,32,33,0.28);
-                    width:90%;
+                    width:100%;
                     display:flex;
                     margin-bottom:1rem;
                     flex-direction:row;
                 }
 
 
-                @media screen and (max-width: 992px) {
-                    .container-exp{
-                        flex-direction:column;
-                    }
-                }
-                
                 .container-exp-logo{
                     flex:30%;
                     display:flex;
@@ -57,7 +51,18 @@ function CardExperience({ expData }) {
 
                 }
             
-
+                @media screen and (max-width: 992px) {
+                    .container-exp{
+                        flex-direction:column;
+                    }
+                    .container-exp-detail{
+                        padding:.2rem;
+                    }
+                }
+                
+                .exp_font{
+                    font-size:1em;
+                }
             `}</style>
 
         </>
