@@ -57,6 +57,7 @@ function CardExperience({ expData }) {
                     }
                     .container-exp-detail{
                         padding:.2rem;
+                        word-wrap:break-word;
                     }
                 }
                 
