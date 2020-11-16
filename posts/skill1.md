@@ -4,10 +4,20 @@ date: "2020-11-12"
 image: "bg_backend.png"
 ---
 
-I'm here to write somethins about backend Software development
+Server-side programming.
 
-I'm here to write somethins about backend Software development
+I am working on two of the most used technologies:
+- PHP 
+- Nodejs + Express. 
 
-I'm here to write somethins about backend Software development
+Relational databases: 
+- PostgreSQL, MySQL, DBase, Others
 
-I'm here to write somethins about backend Software development
+Non Realtional Database:
+- Firebase
+
+Deployment: 
+- Git 
+- AWS 
+- Docker, etc.
+
