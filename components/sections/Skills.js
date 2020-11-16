@@ -9,7 +9,7 @@ function Skills({ allSkills }) {
         <div className={styles.container}>
             <div className={styles.content}>
                 <Fade>
-                    <h1>What I do?</h1>
+                    <h1>How can I help?</h1>
                 </Fade>
                 <div className={styles.columns}>
                     {allSkills.map((skl) => (

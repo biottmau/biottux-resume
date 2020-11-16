@@ -23,9 +23,11 @@
 
 .social a{
     margin: 1rem;
+    font-size: 2rem;
+    color:#DAE3E5;
 }
 
 .social a:hover{
     margin: 1rem;
-    background-color: #DAE3E5;
+    color: #FFFFFF;
 }
