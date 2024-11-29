@@ -5,7 +5,7 @@ image: "bg_mobile.png"
 ---
 
 I have experience in native language Java, but recently I'm working with hybrid technologies
-- Ioni ( Angular version 1 )
+- Ionic ( Angular version 1 )
 - React Native ( lastest  )
 
 I can to do too:
