@@ -6,7 +6,7 @@ website: http://balbl.com
 logo: "arballon_logo.gif"
 ---
 
-I'm working on mantaince of Backend and API Development .
+I'm working on mantaince of Backend and API Development.
 - Website: http://www.revistasya.com
 - Skills: PHP, Yii2, MySQL, AWS, Ghostscript, jQuery, Boostrap, 
 - Company: Mobisoft.com.ar
