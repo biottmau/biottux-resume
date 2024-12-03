@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./experience.module.css";
 import CardExperience from "../CardExperience";
+import { motion } from 'framer-motion';
 
 function Experience({ expData }) {
   return (

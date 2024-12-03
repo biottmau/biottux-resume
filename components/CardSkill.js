@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from 'framer-motion';
 
 function CardSkill({ skillData }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true }); // Solo activa una vez cuando es visible
+
   return (
     <motion.div
-      animate={{ y: [0, -30, 0] }} // Rebote hacia arriba (-30px) y regresa a 0
+      ref={ref}
+      animate={isInView ? { y: [0, -30, 0] } : {}}
       transition={{
         duration: 0.8, // Duración de un ciclo
-        repeat: Infinity, // Repetir indefinidamente
-        repeatType: "loop", // Animación en bucle
+        // repeatType: "loop", // Animación en bucle
         ease: "easeOut", // Suaviza el rebote
       }}
     >

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./skills.module.css";
 import CardSkill from "../CardSkill";
+import { motion } from 'framer-motion';
 
 function Skills({ allSkills }) {
   return (

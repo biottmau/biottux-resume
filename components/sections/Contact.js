@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from 'framer-motion';
+
 import {
   faInstagram,
   faLinkedin,

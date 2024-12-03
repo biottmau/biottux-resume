@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./intro.module.css";
+import { motion } from 'framer-motion';
+
 
 export default function Intro({ postData }) {
   useEffect(() => {

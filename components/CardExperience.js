@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from 'framer-motion';
 
 function CardExperience({ expData }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true }); // Solo activa una vez cuando es visible
+
   return (
     <>
       <div className="container-exp">
         <div className="container-exp-logo">
           <motion.div
-            animate={{ opacity: [1, 0, 1] }} // Ciclo de visibilidad
+            ref={ref}
+            animate={isInView ? { opacity: [1, 0, 1] } : {}} // Ciclo de visibilidad
             transition={{
               duration: 1, // Duración de un ciclo completo
-              repeat: Infinity, // Repetir infinitamente
               ease: "easeInOut", // Transición suave
             }}
           >
